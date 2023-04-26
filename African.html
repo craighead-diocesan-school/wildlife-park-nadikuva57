@@ -2,7 +2,7 @@
 <html>
   <body>
     <main></main>
-    <
+
     <nav>
       <a href="index.html">Home</a>
       <a href="African.html">African</a>
@@ -11,4 +11,30 @@
       <a href="US.html">Us</a>
     </nav>
   </body>
+
+  <style>
+    body {
+      display: grid;
+      grid:
+        " h    h    h  " auto
+        " n    m    m  " auto
+        " n    m    m  " auto
+        " f    f    f  " auto
+        / 1fr 5fr 1fr;
+      grid-gap: 0.5em;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+  </style>
 </html>

@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <title>Wildlife Park</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=NTR&family=Style+Script&display=swap" rel="stylesheet" />
+  </head>
 
   <body>
-    <header>Welcome to South Canterbury's Premier Wildlife Park!</header>
+    <header>
+      <h1>Welcome to South Canterbury's Premier Wildlife Park!</h1>
+    </header>
+
+    <script src="https://kit.fontawesome.com/4110c4dc56.js" crossorigin="anonymous"></script>
 
     <nav>
       <a href="index.html">Home</a>
@@ -14,8 +26,13 @@
     </nav>
 
     <main>
-      <p>Embark on an unforgettable adventure at our unique wildlife park, nestled in the heart of South Canterbury, New Zealand. Our park is home to a diverse collection of incredible animals from three distinct ecosystems: the African Savannah, the American Wilderness, and the Arctic Tundra. Get up close and personal with majestic lions, playful arctic foxes, and gentle giraffes, all within our carefully designed and maintained habitats that prioritize animal welfare and conservation.</p>
-      <p>Join us as we celebrate the beauty of nature and inspire a new generation of wildlife enthusiasts. Our park offers a range of immersive experiences, educational programs, and engaging activities for visitors of all ages. Plan your visit today and discover the wonders of the animal kingdom at South Canterbury's Premier Wildlife Park!</p>
+      <div class="container">
+        <div class="paragraph">
+          <p>Embark on an unforgettable adventure at our unique wildlife park, nestled in the heart of South Canterbury, New Zealand. Our park is home to a diverse collection of incredible animals from three distinct ecosystems: the African Savannah, the American Wilderness, and the Arctic Tundra. Get up close and personal with majestic lions, playful arctic foxes, and gentle giraffes, all within our carefully designed and maintained habitats that prioritize animal welfare and conservation.</p>
+
+          <p>Join us as we celebrate the beauty of nature and inspire a new generation of wildlife enthusiasts. Our park offers a range of immersive experiences, educational programs, and engaging activities for visitors of all ages. Plan your visit today and discover the wonders of the animal kingdom at South Canterbury's Premier Wildlife Park!</p>
+        </div>
+      </div>
     </main>
   </body>
 
@@ -27,7 +44,7 @@
         " n    m    m  " auto
         " n    m    m  " auto
         " f    f    f  " auto
-        / 1fr 5fr 1fr;
+        / 1fr 3fr 2fr;
       grid-gap: 0.5em;
     }
 
@@ -42,6 +59,87 @@
     }
     footer {
       grid-area: f;
+    }
+
+    header {
+      color: white;
+      padding: 2em;
+      text-align: center;
+      font-size: xx-large;
+      font-weight: bolder;
+      font-family: "Sigmar", cursive;
+    }
+
+    header {
+      background: url("arctic-fox-1-jonatan-pie.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    body {
+      background-color: #3a6ba7c2;
+    }
+
+    a {
+      text-decoration: none;
+      background: #c2eaba;
+      color: #3a6ba7;
+      border: 1px solid #88a780;
+      border-width: 0.15em;
+      padding: 0.5em;
+      text-align: center;
+      font-size: large;
+      display: block;
+      margin: 0.25em;
+      font-family: "Bree Serif", cursive;
+      text-align: center;
+    }
+
+    a:hover {
+      background: #88a780;
+      color: #3a6ba7;
+      border: 1px solid #c2eaba;
+      border-width: 0.15em;
+    }
+
+    h2 {
+      padding: 0.5em;
+      font-size: large;
+      font-weight: bolder;
+      font-family: "Sigmar", cursive;
+      background: #c2eaba;
+      color: #3a6ba7;
+      text-align: center;
+      margin: 1.5em;
+    }
+
+    h3 {
+      padding: 0.5em;
+      font-size: large;
+      font-family: "Sigmar", cursive;
+      color: white;
+      text-align: center;
+      font-size: larger;
+    }
+
+    p {
+      text-align: left;
+      background: #88a780;
+      color: rgba(255, 255, 255, 0.637);
+      padding: 1em;
+      font-family: "Vina Sans", cursive;
+      text-align: center;
+      margin: 3em;
+    }
+
+    img {
+      height: 10rem;
+    }
+
+    .div {
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
     }
   </style>
 </html>

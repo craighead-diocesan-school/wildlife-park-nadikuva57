@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   </head>
 
   <body>
@@ -39,18 +43,34 @@
           <p>Join us as we celebrate the beauty of nature and inspire a new generation of wildlife enthusiasts. Our park offers a range of immersive experiences, educational programs, and engaging activities for visitors of all ages. Plan your visit today and discover the wonders of the animal kingdom at South Canterbury's Premier Wildlife Park!</p>
         </div>
 
-        <div class="img">
-          <div class="coloumn">
-            <img src="lion-3-bisakha-datta.jpg" alt="Lion image" />
+
+
+        <div class="container">
+
+
+          <img src="lion-3-bisakha-datta.jpg" alt="Lion Image" class="image" style="width:100%">
+          <div class="middle">
+          <div class="text">Bisakha Datta</div>
           </div>
-          <div class="coloumn">
+
+          <div class="content_img">
             <img src="polar-bear-2-peter-neumann.jpg" alt="Polar bear image" />
+            <div>Peter Neumann</div>
           </div>
-          <div class="coloumn">
+
+          <div class="content_img">
             <img src="beaver-3-niklas-hamann.jpg" alt="beaver" />
+            <div>Niklas Hamann</div>
           </div>
+
+          <div class="content_img">
+            <img src="beaver-3-niklas-hamann.jpg" alt="beaver" />
+            <div>Niklas Hamann</div>
+          </div>
+
+
         </div>
-      </div>
+
     </main>
 
     <footer>&copy; Varuni Year 11</footer>
@@ -159,7 +179,7 @@
       justify-content: baseline;
     }
 
-    img {
+    .content_img {
       height: 15em;
       width: auto;
       border: 3px solid #f3e5ab;
@@ -167,13 +187,40 @@
       margin: 0.5em;
     }
 
-    .img {
-      display: flex;
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: 30em;
+      transition: .4s ease;
+      backface-visibility: hidden;
     }
 
-    .row::after {
-      flex: 33.33%;
-      padding: 5px;
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .container:hover .image {
+      opacity: 0.3;
+    }
+
+    .container:hover .middle {
+     opacity: 1;
+    }
+
+    .text {
+      background: #c1d37f;
+      font-family: "Bree Serif", cursive;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
     }
 
     footer {

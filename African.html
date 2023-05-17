@@ -29,38 +29,60 @@
     </nav>
 
     <main>
-      <h2>Step into the African Savannah</h2>
-
       <div class="container">
+        <h2>Step into the African Savannah</h2>
+
         <div class="paragraph">
           <p>Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our African area is home to some of the continent's most iconic animals, including the majestic lion, the swift cheetah, and the towering giraffe.</p>
 
           <p>Stroll through our park and observe these magnificent creatures up close, while learning about their natural habitats, behaviors, and the conservation efforts in place to protect their future. Don't miss our daily animal encounters, feeding sessions, and interactive talks led by our passionate team of animal experts. Unleash your inner explorer and experience the African Savannah today!</p>
         </div>
+
+        <h2>Meet the Stars of Our African Savannah</h2>
+
+        <h3>Lions:</h3>
+
+        <div class="div">
+          <p>Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.</p>
+        </div>
+
+        <h3>Cheetahs:</h3>
+
+        <div class="div">
+          <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.</p>
+        </div>
+
+        <h3>Giraffes:</h3>
+
+        <div class="div">
+          <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.</p>
+        </div>
       </div>
 
-      <h2>Meet the Stars of Our African Savannah</h2>
+      <div class="container">
+        <div class="card">
+          <img src="cheetah-3-sammy-wong.jpg" height="500" alt="Cheetah running" title="Sammy Wong" />
+          <div class="card_details">
+            <div class="name">Cheetah</div>
+            <button>Read More</button>
+          </div>
+        </div>
 
-      <h3>Lions:</h3>
+        <div class="card">
+          <img src="giraffe-2-sian-cooper.jpg" heigth="500" alt="Giraffe standing" title="Sian Cooper" />
+          <div class="card_details">
+            <div class="name">Giraffe</div>
+            <button>Read More</button>
+          </div>
+        </div>
 
-      <div class="div">
-        <p>Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.</p>
-
-        <img src="lion-1-jeremy-avery.jpg" height="500" alt="2 lions sitting on a rock" title="Jeremy Avery" />
-      </div>
-
-      <h3>Cheetahs:</h3>
-
-      <div class="div">
-        <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.</p>
-        <img src="cheetah-3-sammy-wong.jpg" height="500" alt="Cheetah running" title="Sammy Wong" />
-      </div>
-
-      <h3>Giraffes:</h3>
-
-      <div class="div">
-        <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.</p>
-        <img src="giraffe-1-nikolay-tchaouchev.jpg" heigth="500" alt="Giraffe standing" title="Nikolay Tchaouchev" />
+        <div class="card">
+          <img src="lion-1-jeremy-avery.jpg" height="500" alt="2 lions sitting on a rock" title="Jeremy Avery" />
+          <div class="card_details">
+            <div class="name">Lion</div>
+            <button>Read More</button>
+          </div>
+        </div>
       </div>
     </main>
   </body>
@@ -154,7 +176,7 @@
     p {
       font-size: large;
       text-align: left;
-      margin: 0.5em;
+      margin: 2em;
       padding: 1em;
       font-family: "Vina Sans", cursive;
       display: flex;
@@ -172,20 +194,66 @@
 
     img {
       height: 15em;
-      max-width: auto;
+      width: 22em;
       margin-left: auto;
       margin-right: auto;
+      border-radius: 12px;
       border: solid #f3e5ab;
       border-width: 0.25em;
       margin: 0.5em;
+      object-fit: cover;
+      cursor: pointer;
     }
 
     .div {
       display: grid;
       align-items: left;
-      grid-template-columns: 1fr 0.5fr;
+      grid-template-columns: 1fr 6fr 0.5fr;
       column-gap: 2px;
       flex-direction: column;
+    }
+
+    .container {
+      max-width: 300px;
+      margin: 0 auto;
+      margin-top: 20vh;
+    }
+
+    .card {
+      background-color: white;
+      border: 1.5px solid #bacdd8;
+      padding: 8px;
+      padding-right: 1.8em;
+      border-radius: 12px;
+      height: 28em;
+      width: 22em;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 16px;
+    }
+
+    button {
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      color: #0077ff;
+      background-color: #e0efff;
+      margin: 0 auto;
+      display: block;
+      crusor: pointer;
+    }
+
+    /* .card_details {
+      padding: 16px 8px 8px 8px;
+    } */
+
+    button:focus:hover {
+      badkground-color: #0077ff;
+      color: #e0efff;
     }
 
     footer {

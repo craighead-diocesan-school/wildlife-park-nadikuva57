@@ -114,37 +114,42 @@
       font-size: larger;
     }
 
-    p {
-      background: #f3e5ab;
-      color: rgba(0, 0, 0, 0.897);
-      padding: 1em;
-      font-family: "Vina Sans", cursive;
-      font-size: large;
-      text-align: left;
-      margin: 0.5em;
-    }
-
     .paragraph {
       display: flex;
       flex-direction: row;
       justify-content: baseline;
     }
 
+    p {
+      font-size: large;
+      text-align: left;
+      margin: 0.5em;
+      padding: 1em;
+      font-family: "Vina Sans", cursive;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+    }
+
     img {
       height: 15em;
-      width: auto;
-      border: 3px solid #f3e5ab;
-      border-width: 0.4em;
+      max-width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      border: solid #f3e5ab;
+      border-width: 0.25em;
       margin: 0.5em;
     }
 
-    .img {
-      display: flex;
-    }
-
-    .row::after {
-      flex: 33.33%;
-      padding: 5px;
+    .container {
+      display: grid;
+      align-items: left;
+      grid-template-columns: 1fr 3fr 6fr;
+      align-items: center;
+      column-gap: 2px;
+      flex-direction: column;
     }
 
     footer {

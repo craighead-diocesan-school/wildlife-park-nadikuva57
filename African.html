@@ -55,8 +55,8 @@
         " h    h    h  " auto
         " n    m    m  " auto
         " n    m    m  " auto
-        " f    f    f  " auto
-        / 1fr 3fr 2fr;
+        " f    m    m  " auto
+        / auto auto 2fr;
       grid-gap: 0.5em;
     }
 
@@ -75,9 +75,9 @@
 
     header {
       color: white;
-      padding: 2em;
+      padding: 1.5em;
       text-align: center;
-      font-size: xx-large;
+      font-size: x-large;
       font-weight: bolder;
       font-family: "Sigmar", cursive;
     }
@@ -89,29 +89,30 @@
     }
 
     body {
-      background-color: #3a6ba7c2;
+      background-color: #c1d37f;
     }
 
     a {
       text-decoration: none;
-      background: #c2eaba;
-      color: #3a6ba7;
-      border: 1px solid #88a780;
-      border-width: 0.15em;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+      border: 3px solid #c1d37f;
+      border-width: 0.4em;
       padding: 0.5em;
+      width: 5em;
       text-align: center;
       font-size: large;
       display: block;
-      margin: 0.25em;
+      margin-bottom: 0.25em;
       font-family: "Bree Serif", cursive;
       text-align: center;
     }
 
     a:hover {
-      background: #88a780;
-      color: #3a6ba7;
-      border: 1px solid #c2eaba;
-      border-width: 0.15em;
+      background-color: #c1d37f;
+      color: #ffffff;
+      border: solid #f3e5ab;
+      border-width: 0.4em;
     }
 
     h2 {
@@ -119,8 +120,8 @@
       font-size: large;
       font-weight: bolder;
       font-family: "Sigmar", cursive;
-      background: #c2eaba;
-      color: #3a6ba7;
+      background: #e2d58b;
+      color: #000000;
       text-align: center;
       margin: 1.5em;
     }
@@ -129,29 +130,53 @@
       padding: 0.5em;
       font-size: large;
       font-family: "Sigmar", cursive;
-      color: white;
+      color: rgb(0, 0, 0);
       text-align: center;
       font-size: larger;
     }
 
-    p {
-      text-align: left;
-      background: #88a780;
-      color: rgba(255, 255, 255, 0.637);
-      padding: 1em;
-      font-family: "Vina Sans", cursive;
-      text-align: center;
-      margin: 3em;
-    }
-
-    img {
-      height: 10rem;
-    }
-
-    .div {
+    .paragraph {
       display: flex;
       flex-direction: row;
       justify-content: baseline;
+    }
+
+    p {
+      font-size: large;
+      text-align: left;
+      margin: 0.5em;
+      padding: 1em;
+      font-family: "Vina Sans", cursive;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+    }
+
+    img {
+      height: 15em;
+      max-width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      border: solid #f3e5ab;
+      border-width: 0.25em;
+      margin: 0.5em;
+    }
+
+    .container {
+      display: grid;
+      align-items: left;
+      grid-template-columns: 1fr 3fr 6fr;
+      align-items: center;
+      column-gap: 2px;
+      flex-direction: column;
+    }
+
+    footer {
+      font-family: "Vina Sans", cursive;
+      font-size: large;
+      color: rgba(0, 0, 0, 0.541);
     }
   </style>
 </html>

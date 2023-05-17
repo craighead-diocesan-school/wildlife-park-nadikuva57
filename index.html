@@ -42,25 +42,14 @@
         </div>
 
         <div class="container">
+          <div class="images"><img src="lion-3-bisakha-datta.jpg" height="500" alt= Lion Image" title="Bisakha Datta"/></div>
+
           <div class="images">
-            <img src="lion-3-bisakha-datta.jpg" alt="Lion Image" class="image" />
-            <div class="middle">
-              <div class="text">Bisakha Datta</div>
-            </div>
+            <img src="polar-bear-2-peter-neumann.jpg" height="500" alt="Polar bear image" title="Peter Neumann" />
           </div>
 
           <div class="images">
-            <img src="polar-bear-2-peter-neumann.jpg" alt="Polar bear image" class="image" />
-            <div class="middle">
-              <div class="text">Peter Neumann</div>
-            </div>
-          </div>
-
-          <div class="images">
-            <img src="beaver-3-niklas-hamann.jpg" alt="beaver" class="image" style="width: 100%" />
-            <div class="middle">
-              <div class="text">Niklas Hamann</div>
-            </div>
+            <img src="beaver-3-niklas-hamann.jpg" height="500" alt="beaver" title="Niklas Hamann " />
           </div>
         </div>
       </div>
@@ -175,46 +164,11 @@
       color: rgba(0, 0, 0, 0.897);
     }
 
-    .container {
-      opacity: 1;
-      display: block;
-      transition: 0.4s ease;
-      backface-visibility: hidden;
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-
     img {
-      width: auto;
       height: 15em;
-    }
-
-    .middle {
-      transition: 0.5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-      transform: translate(-50%, -50%);
-    }
-
-    .images:hover .image {
-      opacity: 0.3;
-    }
-
-    .images:hover .middle {
-      opacity: 1;
-    }
-
-    .text {
-      background: #c1d37f;
-      font-family: "Bree Serif", cursive;
-      color: white;
-      font-size: 16px;
-      padding: 16px 32px;
+      max-width: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer {

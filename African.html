@@ -46,21 +46,21 @@
       <div class="div">
         <p>Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.</p>
 
-        <img src="lion-1-jeremy-avery.jpg" alt="2 lions sitting on a rock" />
+        <img src="lion-1-jeremy-avery.jpg" height="500" alt="2 lions sitting on a rock" title="Jeremy Avery" />
       </div>
 
       <h3>Cheetahs:</h3>
 
       <div class="div">
         <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.</p>
-        <img src="cheetah-3-sammy-wong.jpg" alt="Cheetah running" />
+        <img src="cheetah-3-sammy-wong.jpg" height="500" alt="Cheetah running" title="Sammy Wong" />
       </div>
 
       <h3>Giraffes:</h3>
 
       <div class="div">
         <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.</p>
-        <img src="giraffe-1-nikolay-tchaouchev.jpg" alt="Giraffe standing" />
+        <img src="giraffe-1-nikolay-tchaouchev.jpg" heigth="500" alt="Giraffe standing" title="Nikolay Tchaouchev" />
       </div>
     </main>
   </body>
@@ -135,7 +135,6 @@
     h2 {
       padding: 0.5em;
       font-size: large;
-      font-weight: bolder;
       font-family: "Sigmar", cursive;
       background: #e2d58b;
       color: #000000;
@@ -148,14 +147,8 @@
       font-size: large;
       font-family: "Sigmar", cursive;
       color: rgb(0, 0, 0);
-      text-align: center;
+      text-align: left;
       font-size: larger;
-    }
-
-    .paragraph {
-      display: flex;
-      flex-direction: row;
-      justify-content: baseline;
     }
 
     p {
@@ -171,6 +164,12 @@
       color: rgba(0, 0, 0, 0.897);
     }
 
+    .paragraph {
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+    }
+
     img {
       height: 15em;
       max-width: auto;
@@ -181,11 +180,10 @@
       margin: 0.5em;
     }
 
-    .container {
+    .div {
       display: grid;
       align-items: left;
-      grid-template-columns: 1fr 3fr 6fr;
-      align-items: center;
+      grid-template-columns: 1fr 0.5fr;
       column-gap: 2px;
       flex-direction: column;
     }

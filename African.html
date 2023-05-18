@@ -39,26 +39,8 @@
         </div>
 
         <h2>Meet the Stars of Our African Savannah</h2>
-
-        <h3>Lions:</h3>
-
-        <div class="div">
-          <p>Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.</p>
-        </div>
-
-        <h3>Cheetahs:</h3>
-
-        <div class="div">
-          <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.</p>
-        </div>
-
-        <h3>Giraffes:</h3>
-
-        <div class="div">
-          <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.</p>
-        </div>
       </div>
-
+       
       <div class="container">
         <div class="card">
           <img src="cheetah-3-sammy-wong.jpg" height="500" alt="Cheetah running" title="Sammy Wong" />
@@ -83,7 +65,7 @@
             <a href="Lions.html" class="button">Click Here</a>
           </div>
         </div>
-      </div>
+      
     </main>
   </body>
 
@@ -119,6 +101,7 @@
       font-size: x-large;
       font-weight: bolder;
       font-family: "Sigmar", cursive;
+      letter-spacing: 0.045em;
     }
 
     header {
@@ -144,6 +127,8 @@
       margin-bottom: 0.25em;
       font-family: "Bree Serif", cursive;
       text-align: center;
+      letter-spacing: 0.045em;
+      transition: 0.2s ease;
     }
 
     a:hover {
@@ -161,21 +146,13 @@
       color: #000000;
       text-align: center;
       margin: 1.5em;
-    }
-
-    h3 {
-      padding: 0.5em;
-      font-size: large;
-      font-family: "Sigmar", cursive;
-      color: rgb(0, 0, 0);
-      text-align: left;
-      font-size: larger;
+      letter-spacing: 0.10em;
     }
 
     p {
-      font-size: large;
+      font-size: larger;
       text-align: left;
-      margin: 2em;
+      margin: 1em;
       padding: 1em;
       font-family: "Vina Sans", cursive;
       display: flex;
@@ -183,6 +160,7 @@
       justify-content: baseline;
       background: #f3e5ab;
       color: rgba(0, 0, 0, 0.897);
+      letter-spacing: 0.045em;
     }
 
     .paragraph {
@@ -204,7 +182,7 @@
       cursor: pointer;
     }
 
-    .div {
+    .paragraphs {
       display: grid;
       align-items: left;
       grid-template-columns: 1fr 6fr 0.5fr;
@@ -213,14 +191,16 @@
     }
 
     .container {
-      max-width: 300px;
-      margin: 0 auto;
-      margin-top: 20vh;
+      display: grid;
+      align-items: left;
+      grid-template-columns: 2fr 3fr 9fr;
+      column-gap: 2em;
+      flex-direction: column;
     }
 
     .card {
-      background-color: white;
-      border: 1.5px solid #bacdd8;
+      background: #f3e5ab;
+      border-color: rgba(0, 0, 0, 0.897);
       padding: 8px;
       padding-right: 1.8em;
       border-radius: 12px;
@@ -245,18 +225,16 @@
       text-decoration: none;
       background: #f3e5ab;
       color: rgba(0, 0, 0, 0.897);
-      border: 3px solid #f3e5ab;
+      border: 3px solid #c1d37f;
       border-width: 0.4em;
       padding: 0.5em;
       width: 5em;
       font-size: large;
       font-family: "Bree Serif", cursive;
       text-align: center;
+      letter-spacing: 0.045em;
+      transition: 0.4s ease;
     }
-
-    /* .card_details {
-      padding: 16px 8px 8px 8px;
-    } */
 
     button:focus:hover {
       background-color: #c1d37f;

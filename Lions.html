@@ -17,6 +17,151 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-</html>
 
-<header><h1>hi</h1></header>
+  <body>
+    <header><h1>African Area</h1></header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="African.html">African</a>
+      <a href="American.html">American</a>
+      <a href="Artic.html">Artic</a>
+      <a href="US.html">Us</a>
+    </nav>
+
+    <main>
+      <h2>Lion</h2>
+
+      <div class="information">
+        <div class="paragraph">
+          <p>Introducing our pride of ions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.</p>
+        </div>
+
+        <div class="images">
+          <img src="lion-2-leonard-von-bibra.jpg" heigth="500" alt="Pack of lions" title="Leonard Von Bibra" />
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <style>
+    body {
+      display: grid;
+      grid:
+        " h    h    h  " auto
+        " n    m    m  " auto
+        " n    m    m  " auto
+        " f    m    m  " auto
+        / auto auto 2fr;
+      grid-gap: 0.5em;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+
+    h1 {
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+      font-size: xx-large;
+      font-weight: bolder;
+      font-family: "Sigmar", cursive;
+      letter-spacing: 0.4em;
+    }
+    header {
+      background: url("arctic-fox-1-jonatan-pie.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    body {
+      background-color: #c1d37f;
+    }
+
+    a {
+      text-decoration: none;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+      border: 3px solid #c1d37f;
+      border-width: 0.4em;
+      padding: 0.5em;
+      width: 5em;
+      font-size: large;
+      display: block;
+      margin-bottom: 0.25em;
+      font-family: "Bree Serif", cursive;
+      text-align: center;
+      letter-spacing: 0.045em;
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      background-color: #c1d37f;
+      color: #ffffff;
+      border: solid #f3e5ab;
+      border-width: 0.4em;
+    }
+
+    h2 {
+      padding: 0.5em;
+      font-size: larger;
+      font-family: "Sigmar", cursive;
+      background: #e2d58b;
+      color: #000000;
+      text-align: center;
+      margin: 1.5em;
+      letter-spacing: 0.15em;
+    }
+
+    p {
+      font-size: larger;
+      text-align: left;
+      margin: 1em;
+      padding: 1em;
+      font-family: "Vina Sans", cursive;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+      letter-spacing: 0.045em;
+    }
+
+    .paragraph {
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+    }
+
+    img {
+      height: 15em;
+      width: 22em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 12px;
+      border: solid #f3e5ab;
+      border-width: 0.25em;
+      margin: 0.5em;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .information {
+      display: grid;
+      align-items: left;
+      grid-template-columns: 1fr 0.5fr;
+      column-gap: 2px;
+      flex-direction: column;
+    }
+  </style>
+</html>

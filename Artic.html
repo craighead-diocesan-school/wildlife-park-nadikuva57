@@ -30,12 +30,43 @@
     </nav>
 
     <main>
-      <h2>Explore the Enchanting Arctic Tundra</h2>
+      <div class="information">
+        <h2>Explore the Enchanting Arctic Tundra</h2>
 
-      <p>Embrace the chill and journey to the frozen wonders of the Arctic, where you'll encounter some of the world's most remarkable cold-weather inhabitants. Our Arctic area features the awe-inspiring polar bear, the cunning arctic fox, and the charming fur seal, each perfectly adapted to life in the icy tundra.</p>
-      <p>Witness these magnificent animals in action, as you learn about their unique adaptations, survival strategies, and the challenges they face in a rapidly changing environment. Take part in our interactive presentations, meet our dedicated team of Arctic experts, and gain a deeper appreciation for the incredible creatures that call the Arctic home.</p>
+        <div class="paragraph">
+          <p>Embrace the chill and journey to the frozen wonders of the Arctic, where you'll encounter some of the world's most remarkable cold-weather inhabitants. Our Arctic area features the awe-inspiring polar bear, the cunning arctic fox, and the charming fur seal, each perfectly adapted to life in the icy tundra.</p>
+          <p>Witness these magnificent animals in action, as you learn about their unique adaptations, survival strategies, and the challenges they face in a rapidly changing environment. Take part in our interactive presentations, meet our dedicated team of Arctic experts, and gain a deeper appreciation for the incredible creatures that call the Arctic home.</p>
+        </div>
 
-      <h2>Meet the Stars of Our Enchanting Arctic Tundra</h2>
+        <h2>Meet the Stars of Our Enchanting Arctic Tundra</h2>
+
+        <div class="conatiner">
+          <div class="card">
+            <img src="polar-bear-2-peter-neumann.jpg" height="500" alt="Bison Image" title="Peter Neumann" />
+            <div class="card_details">
+              <div class="name">Polar bears</div>
+              <a href="Bison.html" class="button">Click Here</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="arctic-fox-3-teresa.jpg" height="500" alt="Moose image" title="teresa" />
+            <div class="card_details">
+              <div class="name">Artic foxes</div>
+              <a href="Moose.html" class="button">Click Here</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="fur-seal-2-simon-infanger.jpg" height="500" alt="Beaver Image" title="Simon Infanger" />
+            <div class="card_details">
+              <div class="name">Fur seals</div>
+              <a href="Beaver.html" class="button">Click Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h3>Polar Bears:</h3>
       <p>Introducing our majestic polar bear duo, Aurora and Frost. These awe-inspiring creatures are the largest land carnivores on Earth and are perfectly adapted to life in the harsh Arctic environment. Watch as Aurora and Frost demonstrate their incredible swimming and hunting skills in our expansive Arctic habitat. Learn about their unique adaptations, their critical role in the Arctic ecosystem, and the urgent conservation efforts in place to address the threats they face due to climate change and habitat loss.</p>
       <h3>Arctic Foxes:</h3>
@@ -98,12 +129,13 @@
       border-width: 0.4em;
       padding: 0.5em;
       width: 5em;
-      text-align: center;
       font-size: large;
       display: block;
       margin-bottom: 0.25em;
       font-family: "Bree Serif", cursive;
       text-align: center;
+      letter-spacing: 0.045em;
+      transition: 0.3s ease;
     }
 
     a:hover {
@@ -113,24 +145,45 @@
       border-width: 0.4em;
     }
 
+    .Artic {
+      text-decoration: underline;
+      font-size: larger;
+      padding-right: 0.7em;
+    }
+
+    .Artic:hover {
+      text-decoration: none;
+      background-color: #c1d37f;
+      color: #ffffff;
+      border: solid #f3e5ab;
+      border-width: 0.4em;
+      padding: 0.5em;
+      font-size: large;
+    }
+
     h2 {
       padding: 0.5em;
       font-size: large;
-      font-weight: bolder;
       font-family: "Sigmar", cursive;
       background: #e2d58b;
       color: #000000;
       text-align: center;
       margin: 1.5em;
+      letter-spacing: 0.1em;
     }
 
-    h3 {
-      padding: 0.5em;
-      font-size: large;
-      font-family: "Sigmar", cursive;
-      color: rgb(0, 0, 0);
-      text-align: center;
+    p {
       font-size: larger;
+      text-align: left;
+      margin: 1em;
+      padding: 1em;
+      font-family: "Vina Sans", cursive;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+      letter-spacing: 0.045em;
     }
 
     .paragraph {
@@ -139,36 +192,78 @@
       justify-content: baseline;
     }
 
-    p {
-      font-size: large;
-      text-align: left;
-      margin: 0.5em;
-      padding: 1em;
-      font-family: "Vina Sans", cursive;
-      display: flex;
-      flex-direction: row;
-      justify-content: baseline;
-      background: #f3e5ab;
-      color: rgba(0, 0, 0, 0.897);
-    }
-
     img {
       height: 15em;
-      max-width: auto;
+      width: 22em;
       margin-left: auto;
       margin-right: auto;
+      border-radius: 12px;
       border: solid #f3e5ab;
       border-width: 0.25em;
       margin: 0.5em;
+      object-fit: cover;
+      cursor: pointer;
     }
 
-    .container {
+    .paragraphs {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 6fr 0.5fr;
+      column-gap: 2px;
+      flex-direction: row;
+    }
+
+    .conatiner {
       display: grid;
       align-items: left;
-      grid-template-columns: 1fr 3fr 6fr;
-      align-items: center;
-      column-gap: 2px;
-      flex-direction: column;
+      grid-template-columns: 2fr 3fr 9fr;
+      column-gap: 2em;
+      flex-direction: coloumn;
+    }
+
+    .card {
+      background: #f3e5ab;
+      border-color: rgba(0, 0, 0, 0.897);
+      padding: 8px;
+      padding-right: 1.8em;
+      border-radius: 12px;
+      height: 28em;
+      width: 22em;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-right: 2em;
+      margin-left: 0.25em;
+      cursor: pointer;
+      text-decoration: none;
+      background: #f3e5ab;
+      color: rgba(0, 0, 0, 0.897);
+      border: 3px solid #c1d37f;
+      border-width: 0.4em;
+      padding: 0.5em;
+      width: 5em;
+      font-size: large;
+      font-family: "Bree Serif", cursive;
+      text-align: center;
+      letter-spacing: 0.045em;
+      transition: 0.4s ease;
+    }
+
+    button:focus:hover {
+      background-color: #c1d37f;
+      color: #ffffff;
+      border: solid #f3e5ab;
+      border-width: 0.4em;
     }
 
     footer {
